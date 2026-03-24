@@ -1,7 +1,8 @@
+import os
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 
-TOKEN = "8283345987:AAGrFoP3tZHo1fRNvV5lFzToiaW7YO8PNzc"
+TOKEN = os.getenv("TOKEN")
 CHANNEL_USERNAME = "@Hadyatulloh_YouTuber"
 
 # USER STATUS
@@ -92,7 +93,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "👉 Telegram bot yaratish\n"
             "👉 Website yaratish\n"
             "👉 Dasturlash yordam\n\n"
-            "📢 https://t.me/Hadyatulloh_YouTuber"
+            "📢 Kanallar:\n"
+            "🔹 https://t.me/DESTRO_SHOP\n"
+            "🔹 https://t.me/uzum_xizmatlar"
         )
 
     elif text == "🌐 Tarmoqlar":
